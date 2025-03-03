@@ -39,5 +39,5 @@ for y in range(qr_size[1]):
             final_image.putpixel((x, y), overlay_pixels[x, y])
 
 # Save or show the final image
-final_image.save("C:\\Users\\ayush\\C++\\cp_sucks\\CTF\\cultrang-qr.png")
+final_image.save("path_for_final_image")    # Like C:\\Users\\ayush\\C++\\cp_sucks\\CTF\\cultrang-qr.png
 final_image.show()
