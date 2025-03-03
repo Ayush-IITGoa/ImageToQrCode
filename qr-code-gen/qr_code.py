@@ -2,7 +2,7 @@ import qrcode
 from PIL import Image
 
 # Data for the QR code
-data = "https://drive.google.com/drive/folders/1kRcBNsbxi30Eb7IDfU5LTuvYvoquXmk4"
+data = "https:// "    # Qr Code link
 
 # Generate QR code
 qr = qrcode.QRCode(
@@ -19,7 +19,7 @@ qr.make(fit=True)
 qr_image = qr.make_image(fill_color="black", back_color="white").convert('RGBA')
 
 # Load the image to use as the overlay
-overlay_image_path = "C:\\Users\\ayush\\C++\\cp_sucks\\CTF\\cultrang-logo.png" 
+overlay_image_path = "path_to_image_to_be_embedded" 
 # Update this with your image path
 overlay_image = Image.open(overlay_image_path).convert('RGBA')
 
